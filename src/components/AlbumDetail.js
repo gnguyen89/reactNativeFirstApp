@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Text } from 'react-native';
 
-export default function AlbumDetail() {
+import Card from './Card';
+import CardSection from './CardSection';
+
+export default function AlbumDetail({ album }) {
   return (
-    <Text>Album Details</Text>
+    <Card>
+      <CardSection>
+        <Text>{album.title}</Text>
+      </CardSection>
+    </Card>
   );
 }
+
+AlbumDetail.propTypes = {
+  album: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+};
