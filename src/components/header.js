@@ -37,5 +37,5 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-  headerText: 'Header Text',
+  headerText: 'Header PlaceHolder',
 };
